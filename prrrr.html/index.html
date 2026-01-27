@@ -1,88 +1,170 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Ecommerce Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Shop</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <div class="header">
-        <h1>My Shop</h1>
+<header class="header">
+    <h1>My Shop</h1>
+</header>
+
+
+
+<nav class="navbar">
+    <span class="logo">Shop</span>
+
+    
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">☰</label>
+    
+
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Cart</a>
+        <a href="#">Contact</a>
+        <a href="login.html">Login</a>
     </div>
+</nav>
 
-    <div class="navbar">
-        <a href="#"> <button>Home</button></a>
-        <a href="#"><button>Shop</button></a>
-        <a href="#"><button>Cart</button></a>
-        <a href="#"><button>Contact</button></a>
-    </div>
+<main class="main">
 
-    <div class="main">
+    
+    <input type="radio" name="filter" id="all" checked>
+    <input type="radio" name="filter" id="clothes">
+    <input type="radio" name="filter" id="beauty">
+    <input type="radio" name="filter" id="footwear">
 
-        <div class="sidebar">
-            <h3>Categories</h3>
-            <p>Electronics</p>
-            <p>Clothes</p>
-            <p>Shoes</p>
-            <p>Books</p>
+    
+    <aside class="sidebar">
+        <h3>Categories</h3>
+        <label for="all">All</label>
+        <label for="clothes">Clothes</label>
+        <label for="beauty">Beauty</label>
+        <label for="footwear">Footwear</label>
+    </aside>
+
+    
+    <section class="products">
+    
+
+        <div class="product clothes">
+            <img src="https://www.bonkerscorner.com/cdn/shop/files/cream-crop-hoodie-xs-bonkerscorner-store-33690358448228.jpg?v=1728978584">
+            <h4>Cream Crop Hoodie</h4>
+            <p class="price">₹1,299</p>
+            <button>Add to Cart</button>
         </div>
 
-        <div class="products">
-
-    <div class="product">
-        <img src="https://www.bonkerscorner.com/cdn/shop/files/cream-crop-hoodie-xs-bonkerscorner-store-33690358448228.jpg?v=1728978584" alt="Cream Crop Hoodie">
-        <p>Cream Crop Hoodie</p>
-    </div>
-
-    <div class="product">
-        <img src="https://happydude.in/wp-content/uploads/2020/12/Plain-Black-Crop-Hoodie.jpeg" alt="Black Crop Hoodie">
-        <p>Black Crop Hoodie</p>
-    </div>
-
-    <div class="product">
-        <img src="https://cdn-images.farfetch-contents.com/22/23/59/75/22235975_52314208_1000.jpg" alt="Designer Crop Top">
-        <p>Designer Crop Top</p>
-    </div>
-
-    <div class="product">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9EfoHEs98HFUc1o0mvsTmJov9-mcpj9I07w&s" alt="Casual Crop Top">
-        <p>Casual Crop Top</p>
-    </div>
-
-    <div class="product">
-        <img src="https://cdn-img.prettylittlething.com/b/8/4/d/b84df5635bd55cf6de5ef17ce8784b91607529a1_cmz9881_5.jpg" alt="Fashion Crop Top">
-        <p>Fashion Crop Top</p>
-    </div>
-
-    <div class="product">
-        <img src="https://assets0.mirraw.com/images/12884083/image_zoom.jpeg?1728136777" alt="Ethnic Crop Top">
-        <p>Ethnic Crop Top</p>
-    </div>
-
-    <div class="product">
-        <img src="https://m.media-amazon.com/images/I/41bJL85GstL._AC_UF1000,1000_QL80_.jpg" alt="Printed Crop Top">
-        <p>Foundation</p>
-    </div>
-
-    <div class="product">
-        <img src="https://assets.ajio.com/medias/sys_master/root/20241121/bxf5/673f1064c148fa1b30db2893/-473Wx593H-4919445030-white-MODEL.jpg" alt="White Crop Top">
-        <p>Toner</p>
-    </div>
-
-    <div class="product">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB09N1iYxuQdUGNaJc9nJJdOTgO8BJzMvC8g&s" alt="Stylish Crop Top">
-        <p>Lipstick</p>
-    </div>
-
-</div>
-
+        <div class="product clothes">
+            <img src="https://www.bonkerscorner.com/cdn/shop/files/mint-crop-hoodie-xs-bonkerscorner-store-33690355531876.jpg?v=1728980746" alt="">
+            <h4>Hoddie</h4>
+            <p class="price">356</p>
+            <button>Add to cart</button>
         </div>
-    </div>
 
-    <div class="footer">
-        <p>© 2026 My Shop</p>
-    </div>
+        <div class="product clothes">
+            <img src="https://www.fairindigo.com/cdn/shop/files/CL_02600_White_SS24_7522.jpg?v=1739738264&width=360" alt="">
+            <h4>Organic Clothing</h4>
+            <p class="price">356</p>
+            <button>Add to cart</button>
+        </div>
+
+        <div class="product clothes">
+            <img src="https://m.media-amazon.com/images/I/71VTxfy1OhL._AC_UY1100_.jpg">
+            <h4>Hoodie</h4>
+            <p class="price">₹1,199</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product clothes">
+            <img src="https://m.media-amazon.com/images/I/51a-0P2YrdL._AC_SR175,263_QL70_.jpg">
+            <h4>Hoodie</h4>
+            <p class="price">₹1,199</p>
+            <button>Add to Cart</button>
+         </div>
+
+        <div class="product beauty">
+            <img src="https://m.media-amazon.com/images/I/41bJL85GstL._AC_UF1000,1000_QL80_.jpg">
+            <h4>Foundation</h4>
+            <p class="price">₹699</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product beauty">
+            <img src="https://assets.myntassets.com/dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/19957636/2024/7/25/809a113b-a54c-4066-826a-774d97903c281721897885929LakmeSmudgeProofWaterproofEyeconicLiquidEyeliner45ml-Green1.jpg" alt="">
+            <h4>Eyeiner</h4>
+            <p class="price">₹789</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product beauty">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Mascara_de_pesta%C3%B1as.jpg/960px-Mascara_de_pesta%C3%B1as.jpg" alt="">
+            <h4>Mascara</h4>
+            <p class="price">₹499</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product beauty">
+            <img src="https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/pix/pix34291/y/23.jpg" alt="">
+            <h4>Blush</h4>
+            <p class="price">₹899</p>
+            <button>Add to Cart</button>
+        </div>
+
+
+        <div class="product beauty">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB09N1iYxuQdUGNaJc9nJJdOTgO8BJzMvC8g&s">
+            <h4>Lipstick</h4>
+            <p class="price">₹399</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product footwear">
+            <img src="https://www.campusshoes.com/cdn/shop/files/SAVVY-22L-930-L.PURPLE-OFFWHT_2.jpg?v=1756366818" alt="">
+            <h4>Sports Shoes</h4>
+            <p class="price">₹1299</p>
+            <button> Add to Cart</button>
+        </div>
+
+        <div class="product footwear">
+            <img src="https://m.media-amazon.com/images/I/5113UxbMY9L._AC_UY1000_.jpg" alt="">
+            <h4>Sneakers</h4>
+            <p class="price">₹1299</p>
+            <button> Add to Cart</button>
+        </div>
+
+        <div class="product footwear">
+            <img src="https://assets.myntassets.com/w_360,q_50,,dpr_2,fl_progressive,f_webp/assets/images/23225750/2023/8/4/143a96b6-f881-4340-8c1f-8628d846b36d1691145904383CasualShoesUSPoloAssnMenCasualShoesUSPoloAssnMenCasualShoesU1.jpg" alt="">
+            <h4>Crocs</h4>
+            <p class="price">₹1999</p>
+            <button> Add to Cart</button>
+        </div>
+
+        <div class="product footwear">
+            <img src="https://assets.myntassets.com/dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2024/OCTOBER/3/LziMXf50_60ca509067684a8fbd293953370db12c.jpg" alt="">
+            <h4>Slipers</h4>
+            <p class="price">₹499</p>
+            <button> Add to Cart</button>
+        </div>
+
+        <div class="product footwear">
+            <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/0/9/096f6baYHB3S02F_1.jpg?tr=w-512" alt="">
+            <h4>Chelsea Boots</h4>
+            <p class="price">₹499</p>
+            <button> Add to Cart</button>
+        </div>
+
+
+    </section>
+</main>
+
+<footer class="footer">
+    © 2026 My Shop
+</footer>
 
 </body>
 </html>
