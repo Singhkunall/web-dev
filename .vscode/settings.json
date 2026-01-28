@@ -1,3 +1,4 @@
 {
-    "livePreview.openPreviewTarget": "External Browser"
+  "livePreview.openPreviewTarget": "External Browser",
+  "C_Cpp_Runner.msvcBatchPath": ""
 }
