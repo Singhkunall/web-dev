@@ -56,14 +56,43 @@
 //     };
 // }
 
-function sum(a, b){
-    console.log(a+b);
-    
-}   
+// 
+// function getData(dataID, getNextData){
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             console.log(dataID);
+//             resolve("success");
+// if(getNextData){
+//     getNextData();
+// }
+//         }, 1000);
+//     });
+// }
+// getid(1, getNextData=>{
+//     getid(2, getNextData=>{
+//         getid(3, getNextData=>{
+//             getid(4, getNextData=>{
+//                 getid(5, null);
+//             });
 
-function sumAll(a, b, sumCallback){
-   setTimeout(() => {
-    sumCallback(a, b);
-   }, 3000);
+//         });
+//     });
+// });
+
+function getData(dataID){
+    setTimeout(() => {
+        console.log(dataID)
+    }, 2000);
+
+        }
+
+async function fetchData(){
+
+    // await getData(1);
+    // await getData(2);
+    // await getData(3);
+    // await getData(4);
+    // await getData(5);
 }
-sumAll(1, 12, sum);
+fetchData();
+
